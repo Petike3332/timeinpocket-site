@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Time in Pocket: timer, jobs, invoices and money for tradespeople</title>
-<meta name="description" content="Time in Pocket is the iPhone app for tradespeople. Time your jobs, send quotes and invoices, and see what you’ve earned, what you’re owed and what’s booked. Coming soon to iPhone.">
+<meta name="description" content="Time in Pocket is the iPhone app for tradespeople. Time your jobs, send quotes and invoices, and see what you’ve earned, what you’re owed and what’s booked. Available on the App Store.">
 <meta name="theme-color" content="#0B0D10">
 <!-- The card shown when a link to this page is sent by WhatsApp, iMessage, Facebook and the like. The picture is on this site. -->
 <link rel="canonical" href="https://timeinpocket.co.uk/">
@@ -13,12 +13,12 @@
 <meta property="og:locale" content="en_GB">
 <meta property="og:url" content="https://timeinpocket.co.uk/">
 <meta property="og:title" content="Time in Pocket: know your hours, keep your money">
-<meta property="og:description" content="The iPhone app for tradespeople. Time your jobs, send quotes and invoices, and see what you’ve earned, what you’re owed and what’s booked. Coming soon to iPhone.">
-<meta property="og:image" content="https://timeinpocket.co.uk/img/share.jpg">
+<meta property="og:description" content="The iPhone app for tradespeople. Time your jobs, send quotes and invoices, and see what you’ve earned, what you’re owed and what’s booked. Available on the App Store.">
+<meta property="og:image" content="https://timeinpocket.co.uk/img/share-launch.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Time in Pocket. Know your hours. Keep your money. An iPhone showing the app’s timer.">
+<meta property="og:image:alt" content="Time in Pocket. Out now. An iPhone showing the app’s timer.">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/icon.png">
 <link rel="apple-touch-icon" href="/icon.png">
@@ -62,7 +62,7 @@ if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: re
   .nav a { text-decoration: none; }
   .nav a:hover, .nav a:focus-visible { color: var(--text); }
   .soon { margin-left: auto; border: 1px solid var(--trim); color: var(--accent); border-radius: 999px; padding: 6px 12px; font-size: 13px; font-weight: 700;
-          letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; }
+          letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; text-decoration: none; }
 
   /* Hero */
   .hero { position: relative; overflow: hidden; }
@@ -79,6 +79,9 @@ if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: re
   .btn.prim { background: var(--amber); color: var(--ink); box-shadow: inset 0 1px 0 rgba(255,255,255,0.45), inset 0 -2px 0 rgba(0,0,0,0.16), 0 10px 26px rgba(242,177,63,0.2); }
   .btn.ghost { background: var(--raised); border: 1px solid var(--edge); color: var(--text); box-shadow: var(--bevel); }
   .btn:hover, .btn:focus-visible { filter: brightness(1.06); outline: none; }
+  .store { display: inline-flex; margin: 1px 2px; border-radius: 9px; }
+  .store img { display: block; width: 156px; height: 52px; }
+  .store:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
   .ticks { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 24px 0 0; padding: 0; list-style: none; color: var(--sub); font-size: 15px; }
   .ticks li { display: flex; align-items: center; gap: 8px; }
   .ticks .ic { width: 17px; height: 17px; color: var(--accent); stroke-width: 2.4; }
@@ -302,7 +305,7 @@ if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: re
       <a href="#questions">Questions</a>
       <a href="/support/">Support</a>
     </nav>
-    <span class="soon">Coming soon</span>
+    <a class="soon" href="https://apps.apple.com/gb/app/id6819167032">Get the app</a>
   </div>
 </header>
 
@@ -311,12 +314,13 @@ if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: re
 <section class="hero" style="padding:0">
   <div class="wrap">
     <div>
-      <span class="lamp"><i></i>Coming soon to iPhone</span>
+      <span class="lamp"><i></i>Out now</span>
       <h1>Know your hours.<br><em>Keep your money.</em></h1>
       <p class="lead">The iPhone app for tradespeople. Time your jobs, send quotes and invoices, and see what you’ve earned, what you’re owed and what’s booked, all in one place.</p>
       <div class="cta">
+        <a class="store" href="https://apps.apple.com/gb/app/id6819167032"><img src="/img/download-on-the-app-store.svg" width="156" height="52" alt="Download on the App Store"></a>
         <a class="btn prim" href="#features">See what it does</a>
-        <a class="btn ghost" href="#film"><svg class="ic"><use href="#i-play"/></svg>Watch the 30-second film</a>
+        <a class="btn ghost" href="#film"><svg class="ic"><use href="#i-play"/></svg>Watch the 28-second film</a>
       </div>
       <ul class="ticks">
         <li><svg class="ic"><use href="#i-tick"/></svg>No account to set up</li>
@@ -503,11 +507,11 @@ if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: re
 
 <section class="film" id="film">
   <div class="wrap">
-    <!-- The advert, from this site itself (no YouTube, so no tracking). It only loads when someone presses play. -->
-    <video class="ad" src="/video/advert.mp4" poster="/video/poster.jpg" controls playsinline preload="none"
-           aria-label="Time in Pocket advert, 30 seconds">Your browser can’t play this video.</video>
+    <!-- The launch film, from this site itself (no YouTube, so no tracking). It only loads when someone presses play. -->
+    <video class="ad" src="/video/launch.mp4" poster="/video/launch-poster.jpg" controls playsinline preload="none"
+           aria-label="Time in Pocket launch film, 28 seconds">Your browser can’t play this video.</video>
     <div>
-      <p class="kicker">30 seconds</p>
+      <p class="kicker">28 seconds</p>
       <h2>A job, start to finish</h2>
       <ol class="steps">
         <li><div><b>The customer calls</b><span>Add the job, or keep it as an enquiry until it’s booked.</span></div></li>
@@ -538,7 +542,7 @@ if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: re
   <div class="wrap">
     <div class="head"><p class="kicker">Questions</p><h2>Good to know</h2></div>
     <div class="faq">
-      <details open><summary>When can I get it?</summary><p>Soon. It’s nearly ready, and this page will say as soon as it’s on the App Store.</p></details>
+      <details open><summary>Where can I get it?</summary><p>Time in Pocket is available on the App Store for iPhone, in the UK. It’s free to try for 2 months. <a href="https://apps.apple.com/gb/app/id6819167032">Get it on your iPhone</a>.</p></details>
       <details><summary>Is it only for iPhone?</summary><p>Yes, for now. There’s no Android or iPad version yet.</p></details>
       <details><summary>Do I need an account?</summary><p>No. Open the app and start. Your records are kept on your iPhone and backed up to your own iCloud.</p></details>
       <details><summary>Does it work without signal?</summary><p>Yes. Your jobs, timer and invoices are all on the phone, so it works in a cellar or on a site with no reception. Backups and map distances catch up when you’re back online.</p></details>
@@ -553,9 +557,10 @@ if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: re
 <section class="last alt">
   <div class="wrap">
     <img src="/img/icon-192.webp" alt="Time in Pocket app icon" width="84" height="84" loading="lazy">
-    <h2>Coming soon to iPhone</h2>
-    <p>Got a question in the meantime? We’re happy to answer it. Follow us on Instagram to hear when it’s out.</p>
-    <div class="cta"><a class="btn ghost" href="mailto:hello@timeinpocket.co.uk"><svg class="ic"><use href="#i-mail"/></svg>hello@timeinpocket.co.uk</a>
+    <h2>Available on the App Store</h2>
+    <p>Free to try for 2 months, then £7.99 a month or £79.99 a year. Got a question? We’re happy to answer it.</p>
+    <div class="cta"><a class="btn prim" href="https://apps.apple.com/gb/app/id6819167032">Get the app</a>
+      <a class="btn ghost" href="mailto:hello@timeinpocket.co.uk"><svg class="ic"><use href="#i-mail"/></svg>hello@timeinpocket.co.uk</a>
       <a class="btn ghost" href="https://www.instagram.com/timeinpocket_/" rel="noopener"><svg class="ic"><use href="#i-out"/></svg>Follow on Instagram</a></div>
   </div>
 </section>
@@ -566,7 +571,7 @@ if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: re
   <div class="wrap">
     <p><a href="/privacy/">Privacy &amp; terms</a> · <a href="/support/">Support</a> · <a href="https://www.instagram.com/timeinpocket_/" rel="noopener">Instagram</a> · No cookies, no tracking</p>
     <p>© 2026 Time in Pocket</p>
-    <p class="tm">iPhone, iCloud, Apple Maps and App Store are trademarks of Apple Inc., registered in the U.S. and other countries and regions.</p>
+    <p class="tm">Apple, the Apple logo, iPhone, iCloud and Apple Maps are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</p>
   </div>
 </footer>
 
