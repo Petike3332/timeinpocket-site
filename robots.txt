@@ -1,0 +1,5 @@
+# timeinpocket.co.uk: every page may be read by search engines; the list of pages is in the sitemap.
+User-agent: *
+Allow: /
+
+Sitemap: https://timeinpocket.co.uk/sitemap.xml
